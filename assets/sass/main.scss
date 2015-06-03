@@ -208,9 +208,9 @@ article {
   height: 1000px;
 
   color: #fff;
-  background-image: url(../img/bg/head-block.jpg);
-
-  @extend .bgc;
+/*   background-image: url(../img/bg/head-block.jpg); */
+/*
+  @extend .bgc; */
   &:before {
     position: absolute;
     z-index: 1;
@@ -401,30 +401,35 @@ article {
       span {
         font-size: 40px;
 
+        position: relative;
         z-index: 30;
-border-radius: 10px;
-background-color: #000;
+
         display: inline-block;
         float: left;
 
         width: 29%;
         margin: 10px 1.5% 0;
-        padding: 0.5%;
+        padding: .5%;
 
         text-align: center;
-        position: relative;
+
+        border-radius: 10px;
+        background-color: #000;
         &:after {
-          content: ':';
           font-size: 40px;
-          position: absolute;
-          right: -9px;
-          top: -2px;
           font-weight: normal;
+
+          position: absolute;
+          top: -2px;
+          right: -9px;
+
+          content: ':';
+
           color: #fff;
         }
         &:first-child {
-          margin-left: 0;
           margin-right: 3%;
+          margin-left: 0;
         }
         &:last-child {
           margin-right: 0;

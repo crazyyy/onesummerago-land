@@ -50,7 +50,7 @@
 
     <!-- section -->
     <section role="main">
-      <article class="head-block">
+      <article class="head-block parallax-window" data-parallax="scroll" data-image-src="img/bg/head-block.jpg">
         <div class="inner">
             <h2>Вам трудно выбрать фотографа на свадьбу?</h2>
             <h3>Две фотосьемки по цене одной</h3>
@@ -76,6 +76,12 @@
           </div>
       </article><!-- /head-block -->
 
+      <article class="may-problem">
+        <div class="inner">
+
+        </div>
+      </article><!-- may-problem -->
+
     </section>
     <!-- /section -->
 
@@ -95,9 +101,21 @@
     <!-- /.mainfooter -->
 </footer>
 <!-- /footer -->
-
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script>
+    // get window height and set to first block
+    document.addEventListener('DOMContentLoaded', function() {
+      var w = window,
+          d = document,
+          e = d.documentElement,
+          g = d.getElementsByTagName('body')[0],
+          x = w.innerWidth || e.clientWidth || g.clientWidth,
+          y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+          $('.head-block').height(y);
+    }, false);
+  </script>
+  <script type="text/javascript" src="js/parallax.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
 
 </body>
 </html>
