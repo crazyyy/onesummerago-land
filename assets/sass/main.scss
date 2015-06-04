@@ -208,9 +208,6 @@ article {
   height: 1000px;
 
   color: #fff;
-/*   background-image: url(../img/bg/head-block.jpg); */
-/*
-  @extend .bgc; */
   &:before {
     position: absolute;
     z-index: 1;
@@ -223,7 +220,7 @@ article {
 
     content: '';
 
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .4);
   }
   .inner {
     position: relative;
@@ -442,7 +439,145 @@ article {
     }
   }
 }
+.may-problem {
+  position: relative;
+  &:before {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 
+    display: block;
+
+    content: '';
+
+    background-color: rgba(0, 0, 0, .4);
+  }
+  .inner {
+    padding-top: 100px;
+    z-index: 2;
+  }
+  h2 {
+    font-size: 44px;
+
+    margin: 0 90px 30px;
+    padding: 5px;
+
+    text-align: center;
+
+    color: #000;
+    border-radius: 12px;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, .70);
+    &:hover {
+      background-color: rgba(255, 255, 255, .90);
+    }
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.4;
+
+    margin: 0 120px 30px;
+    padding: 5px;
+
+    text-align: center;
+
+    color: #000;
+    border-radius: 12px;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, .70);
+    &:hover {
+      background-color: rgba(255, 255, 255, .90);
+    }
+    &.bigger {
+      font-size: 26px;
+    }
+  }
+  ul {
+    width: 100%;
+
+    @extend .clearfix;
+    li {
+      font-size: 16px;
+      line-height: 1.4;
+
+      display: inline-block;
+      float: left;
+
+      width: 25%;
+      height: 120px;
+      margin: 0 4% 20px;
+      padding: 5px;
+
+      cursor: pointer;
+
+      color: #000;
+      border-radius: 12px;
+      background-color: #fff;
+      background-color: rgba(255, 255, 255, .70);
+
+      @extend .clearfix;
+      span {
+        line-height: 1.6;
+
+        display: block;
+        float: left;
+
+        width: 30px;
+        height: 30px;
+        margin: 0 12px 12px 0;
+
+        text-align: center;
+
+        color: $red;
+        border: 3px solid $red;
+        border-radius: 50%;
+      }
+      &:hover {
+        background-color: rgba(255, 255, 255, .90);
+        span {
+          color: $orange;
+          border-color: $orange;
+        }
+      }
+    }
+  }
+  .phone {
+    position: relative;
+
+    width: 410px;
+    margin: 0 auto 50px;
+
+    text-align: center;
+    a {
+      font-size: 56px;
+      font-weight: bold;
+
+      display: block;
+
+      text-align: center;
+      text-decoration: none;
+
+      color: #fff;
+    }
+    span {
+      position: absolute;
+      right: 0;
+      bottom: -10px;
+
+      cursor: pointer;
+      text-transform: lowercase;
+
+      color: $red;
+      border-bottom: 1px dotted $red;
+      &:hover {
+        border-bottom: 1px solid $red;
+      }
+    }
+  }
+}
 
 
 
